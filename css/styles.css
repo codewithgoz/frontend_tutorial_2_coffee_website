@@ -1,0 +1,371 @@
+/*
+Theme Name: Custom Template for Coffee House
+Theme URI: https://codewithgoz/coffee_website/index.html
+Description: Custom design for an imaginary coffee house
+Version: 1.0
+Author: GustavoGM (Goz)
+*/
+
+:root {
+    --color_1: #191919;
+    --color_2: #fff;
+    --color_3: #f6bd4d;
+    --color_4: #000;
+    --color_5: #ede3da;
+    --color_6: #995c31;
+    --color_7: #f2f2f2;
+    --font_1: 'Roboto', sans-serif;
+    --font_2: 'Domine', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 163px;
+}
+
+body {
+    background-color: var(--color_1);
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font_1);
+}
+
+/********* TOP MENU SECTION *****************/
+/*********************************************/
+
+header {
+    background-color: var(--color_1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding-bottom: 11px;
+}
+
+#name {
+    color: var(--color_2);
+    font-size: 25px;
+    font-family: var(--font_2);
+    padding-top: 15px;
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+#top_menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#top_menu ul li {
+    background-color: var(--color_3);
+    color: var(--color_4);
+    margin-left: 6px;
+}
+
+#top_menu ul li a {
+    padding: 4px 6px;
+    display: block;
+    color: var(--color_4);
+    border: solid 1px var(--color_1);
+    text-decoration: none;
+}
+
+#top_menu ul li a:hover {
+    color: var(--color_2);
+    background-color: var(--color_1);
+    border: solid 1px var(--color_2);
+}
+
+/********* BANNER SECTION ********************/
+/*********************************************/
+
+#banner {
+    padding-top: 90px;
+}
+
+#mini, #large {
+    display: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+/********* OFFERS SECTION ********************/
+/*********************************************/
+
+#offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer {
+    background-color: var(--color_5);
+    padding-top: 12px;
+    padding-bottom: 24px;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--color_6);
+    font-size: 24px;
+}
+
+.icon {
+    padding: 14px;
+    padding-bottom: 0px;
+    width: 105px;
+}
+
+.promotion {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--color_1);
+    text-decoration: underline;
+}
+
+
+/********* COFFEE SECTION ********************/
+/*********************************************/
+
+
+.coffee {
+    height: auto;
+    padding: 0px;
+}
+
+
+
+/********* ABOUT SECTION ********************/
+/*********************************************/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    color: var(--color_2);
+}
+
+#about_section1 {
+    padding: 0px 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#about_section1 h2 {
+    margin-top: 24px;
+    color: var(--color_3);
+    font-size: 32px;
+    font-family: var(--font_2);
+}
+
+#about_section1 .name {
+    color: var(--color_3);
+    font-size: 24px;
+    font-family: var(--font_2);
+}
+
+#about_section1 ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#about_section1 ul li {
+    margin-bottom: 18px;
+}
+
+
+/********* MENU SECTION ********************/
+/*********************************************/
+
+#menu {
+    padding: 6px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sheet {
+    color: var(--color_6);
+    width: 100%;
+    background-color: var(--color_5);
+    font-size: 26px;
+    margin-bottom: 12px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.sheet table{
+    width: 100%;
+    margin-bottom: 26px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.sheet table tr:nth-child(even) {
+    background-color: var(--color_7);
+}
+
+.sheet table tr td {
+    padding: 11px;
+}
+
+.sheet .title {
+    font-size: 36px;
+    font-family: var(--font_2);
+    text-align: center;
+    color: var(--color_6);
+}
+
+
+/********* ORDERS SECTION ********************/
+/*********************************************/
+
+#orders {
+    margin-top: 12px;
+    padding: 32px;
+    padding-top: 6px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--color_2);
+}
+
+#orders .title {
+    font-size: 32px;
+    font-family: var(--font_2);
+    color: var(--color_3);
+}
+
+#orders .telephone {
+    font-size: 26px;
+    margin-top: 26px;
+}
+
+#orders p {
+    font-size: 23px;
+}
+
+
+/********* FOOTER SECTION ********************/
+/*********************************************/
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 66px;
+    color: var(--color_2);
+}
+
+footer a {
+    color: var(--color_6);
+}
+
+
+/************ RESPONSIVE *********************/
+/*********************************************/
+
+@media (min-width: 200px) and (max-width: 767.9px) {
+  #mini {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  #name {
+    font-size: 42px;
+  }
+  #top_menu ul li a {
+    padding: 6px 12px;
+  }
+  #large {
+    display: block;
+  }
+  #offers {
+    flex-direction: row;
+  }
+  .offer {
+    margin: 5px;
+    font-size: 18px;
+  }
+  #about {
+    padding: 28px;
+  }
+  #about_section1 {
+    padding-bottom: 39px;
+  }
+  #about_section1 h2 {
+    margin-top: 15px;
+  }
+  #menu {
+    align-items: center;
+  }
+  .sheet {
+    width: 91%;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .sheet .title {
+    font-size: 48px;
+    margin-top: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 5000px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #name {
+        font-size: 57px;
+    }
+    #top_menu ul {
+      margin-left: 28px;    
+    }
+    #top_menu ul li {
+        margin-left: 15px;
+    }
+    #top_menu ul li a {
+        padding: 10px 20px;
+    }
+    #large {
+        display: block;
+    }
+    #offers {
+        flex-direction: row;
+      }
+    .offer {
+        padding-top: 5px;
+        padding-bottom: 11px;
+        text-align: center;
+        font-size: 26px;
+        margin-right: 15px;
+    }
+    #about {
+        flex-direction: row;
+        font-size: 18px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #about_section1 {
+        padding: 47px;
+        font-size: 22px;
+    }
+    #menu {
+        flex-direction: row;
+    }
+    .sheet {
+        margin: 12px;
+    }        
+}
+
+
+
+

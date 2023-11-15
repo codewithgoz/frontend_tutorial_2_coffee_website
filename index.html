@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Gómes Macías (Goz)">
+    <meta name="description" content="La mejor Cafetería de México">
+    <meta name="keywords" content="café, café rico, cafetería, pastel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Gozchenko Coffee House</title>
+</head>
+<body>
+    <header>
+        <div id="name">
+            Gozchenko Coffee House
+        </div>
+        <div id="top_menu">
+            <ul>
+                <li><a href="#banner">INICIO</a></li>
+                <li><a href="#about">NOSOTROS</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#orders">PEDIR</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="banner">
+        <div id="mini">
+            <img src="images/banner_mini.jpg" alt="banner_mini" class="responsive">
+        </div>
+        <div id="large">
+            <img src="images/banner.jpg" alt="banner" class="responsive">
+        </div>
+    </div>
+    <div id="offers">
+        <div class="offer">
+          <img src="images/icon1.png" alt="cafe" class="icon">
+          <div>
+            <span class="promotion">PROMOCIÓN 1</span><br>
+            2x1 en Café<br>
+            Lunes y Miércoles
+          </div>    
+        </div>
+        <div class="offer">
+            <img src="images/icon2.png" alt="cafe" class="icon">
+            <div>
+              <span class="promotion">PROMOCIÓN 2</span><br>
+              2x1 en Capuchino<br>
+              Lunes y Miércoles
+            </div>    
+        </div>
+        <div class="offer">
+            <img src="images/icon3.png" alt="cafe" class="icon">
+            <div>
+              <span class="promotion">PROMOCIÓN 3</span><br>
+              Pastel Gratis<br>
+              Jueves y Viernes
+            </div>    
+        </div>
+        <div class="offer">
+            <img src="images/icon4.png" alt="cafe" class="icon">
+            <div>
+              <span class="promotion">PROMOCIÓN 4</span><br>
+              Extra en Café <br>
+              Viernes y Sábado
+            </div>    
+        </div>                        
+    </div>
+    <div class="coffee">
+        <div id="mini">
+          <img src="images/coffee_mini.jpg" alt="coffee_mini" class="responsive">
+        </div>
+        <div id="large">
+          <img src="images/coffee1.jpg" alt="coffee" class="responsive">
+        </div>        
+    </div>
+    <div id="about">
+        <div id="about_section1">
+            <h2>Nuestro Café</h2>
+            <p>
+                Cosechado con mucho amor por veracruzanos conocedores del café y traído directamente para usted en
+                distintas presentaciones y mezclas de la casa:
+            </p>
+            <ul>
+              <li>
+                <span class="name">La Mañanera</span><br>
+                    Para comenzar su día relajado y contento,una taza de esta mezcla especial.
+              </li>
+              <li>
+                <span class="name">La Godinez</span><br>
+                    Para el trabajador/a que llega dormido a la oficina, una taza de esta mezcla es suficiente para sobresalir en el trajín de la oficina.
+                </li>	 				
+                <li>
+                    <span class="name">La Usain Bolt</span><br>
+                    Para el que necesita una dosis extra de cafeína en su sistema sin importar las consecuencias, esta
+                    mezcla es la más fuerte de todas. Puede dormir a un caballo si se le administra más de dos tazas.
+                </li>	
+                <li>
+                    <span class="name">La Selva Negra</span><br>
+                    Para damas y caballeros que tienen problemas en descargar su sistema digestivo, una taza de
+                    esta mezcla es suficiente para aliviar todo el día.
+                </li>	
+            </ul>	            
+        </div>
+        <div id="about_section2">
+          <img src="images/coffee2.jpg" alt="coffee2" class="responsive">  
+        </div>
+    </div>
+    <div class="coffee">
+        <div id="mini">
+          <img src="images/coffee_mini.jpg" alt="coffee_mini" class="responsive">
+        </div>
+        <div id="large">
+          <img src="images/coffee1.jpg" alt="coffee" class="responsive">
+        </div>        
+    </div> 
+    <div id="menu">
+        <div class="sheet">
+            <div class="title">
+              <i class="fas fa-coffee"></i> CAFÉ
+            </div>
+            <table>
+                <tr>
+                    <td>Americano</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Capuchino</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Expreso</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Corto</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Machiato</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Crema Irlandesa</td>
+                    <td>$23.00</td>
+                </tr>                                           
+            </table>
+        </div>
+        <div class="sheet">
+            <div class="title">
+              <i class="fas fa-blender"></i> CAFÉ FRÍO
+            </div>
+            <table>
+                <tr>
+                    <td>Iced Coffee</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Latte</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Expreso</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Caramel</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Mocha</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Iced White Chocolate</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Vainilla</td>
+                    <td>$23.00</td>
+                </tr>                                           
+            </table>
+        </div>
+        <div class="sheet">
+            <div class="title">
+              <i class="fas fa-utensils"></i> PLATILLOS
+            </div>
+            <table>
+                <tr>
+                    <td>Baggel de salmón</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Baguette</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Sandwich especial</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Club Sandwich</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Ensalada de la casa</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Chilaquiles con pollo</td>
+                    <td>$23.00</td>
+                </tr>
+                <tr>
+                    <td>Waffles</td>
+                    <td>$23.00</td>
+                </tr>                                           
+            </table>
+        </div>                
+    </div>
+    <div class="coffee">
+        <div id="mini">
+          <img src="images/coffee_mini.jpg" alt="coffee_mini" class="responsive">
+        </div>
+        <div id="large">
+          <img src="images/coffee1.jpg" alt="coffee" class="responsive">
+        </div>        
+    </div>
+    <div id="orders">
+        <div class="title">
+            SERVICIO A DOMICILIO
+        </div>
+        <div class="telephone">
+            <i class="fab fa-whatsapp"></i> 1111-222-333    
+        </div>
+        <div class="telephone">
+            1111-222-333    
+        </div>
+        <p>
+          Podemos realizar entregas dentro de la siguiente área:
+        </p> 
+        <div id="map" style="width: 100%; height: 560px; margin-top: 41px;"></div>
+        <script>
+
+            const map = L.map('map').setView([19.372677, -99.155993], 15);
+
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
+        
+           const marker = L.marker([19.372677, -99.155993]).addTo(map).bindPopup('Gozchenko Coffee House').openPopup();
+
+           const circle = L.circle([19.372677, -99.155993], {
+			color: '#f6bd4d',
+            fillColor: 'yellow',
+            fillOpacity: 0.1,
+            radius: 1100
+           }).addTo(map);
+
+        </script>
+    </div>
+    <div class="coffee">
+        <div id="mini">
+          <img src="images/coffee_mini.jpg" alt="coffee_mini" class="responsive">
+        </div>
+        <div id="large">
+          <img src="images/coffee1.jpg" alt="coffee" class="responsive">
+        </div>        
+    </div>
+    <footer>
+        Goztech Coffee House fue desarrollado por<br> 
+        <a href="https://gustavogm.me" target="_blank">Gustavo Gómez Macías (GOZ)</a><br>
+        Este SITIO WEB fue desarrollado para los tutoriales de<br>
+        <a href="https://codewithgoz.com" target="_blank">Code With Goz</a><br>
+        Toda la información presentada en el sitio NO ES REAL.<br>
+        Idea original, diseño y textos por Goz - 2023<br>
+        <a href="credits.html" target="_blank">Créditos de las imágenes</a>               
+    </footer>          
+</body>
+</html>

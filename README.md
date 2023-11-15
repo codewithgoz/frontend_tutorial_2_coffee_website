@@ -3,7 +3,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://codewithgoz/tutorials/7)
 
-<p align="center"><a href="https://codewithgoz/tutorials/7">VER VIDEO</a></p>
+<p align="center"><a href="https://codewithgoz.com/tutorials/7">VER VIDEO</a></p>
 
 <p align="center"><a href="https://codewithgoz.com/coffee_website/index.html">VER SITIO ONLINE</a></p>
 

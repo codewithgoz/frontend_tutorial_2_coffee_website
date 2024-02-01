@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 # Frontend para Sitio Web de Cafetería
 
-[![Product Name Screen Shot][product-screenshot]](https://codewithgoz/tutorials/7)
+[![Product Name Screen Shot][product-screenshot]](https://codewithgoz.com/tutorials/7)
 
 <p align="center"><a href="https://codewithgoz.com/tutorials/7">VER VIDEO</a></p>
 
